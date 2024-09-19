@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  flex-wrap: wrap;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo-section img {
+  height: 70px;
+  margin-right: 10px;
+}
+.logo-section h1 {
+  font-size: 36px;
+  color: #d32f2f;
+  margin: 0;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #d32f2f;
+}
+.social-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.social-section a {
+  text-decoration: none;
+}
+.social-section a img {
+  height: 24px;
+}
+.contact-section {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+h2 {
+  color: #d32f2f;
+  text-align: left;
+  margin: 20px 0;
+  font-size: 32px;
+}
+.filter-bar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.filter-bar button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 5px;
+}
+.filter-bar button:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+.filter-bar .active {
+  background-color: #b71c1c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.news-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+.news-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.news-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.news-item img:hover {
+  transform: scale(1.05);
+}
+.news-item h3 {
+  font-size: 20px;
+  color: #d32f2f;
+  margin: 15px;
+}
+.news-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 15px 15px;
+}
+@media (max-width: 768px) {
+  nav {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .social-section {
+    flex-wrap: wrap;
+  }
+  .logo-section h1 {
+    font-size: 28px;
+  }
+}
